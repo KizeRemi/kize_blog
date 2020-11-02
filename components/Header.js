@@ -6,7 +6,7 @@ const Header = () => (
     <div class="max-w-screen-xl mx-auto">
       <div class="z-10 bg-white w-full lg:max-w-xl lg:w-full xl:max-w-2xl">
         <main class="mx-auto max-w-screen-xl px-4 sm:mt-6 sm:px-6 lg:px-8">
-          <div class="sm:text-center lg:text-left leading-tight">
+          <div class="sm:text-center lg:text-left leading-none sm:leading-tight">
             <Title weight="semibold" size="huge" as="h2" color="black">
               Je suis Rémi.
               <br />
