@@ -38,9 +38,11 @@ const ArticleCard = ({ imageUrl, date, title, description, category, link }) => 
         <p class="text-gray-700 text-base">{description}</p>
       </div>
       <div class="flex justify-end">
-        <button class="text-gray-900 border border-gray-900 py-2 px-8">
-          Lire l'article
-        </button>
+        <Link href={link}>
+          <a className="text-gray-900 border border-gray-900 py-2 px-8">
+            Lire l'article
+          </a>
+        </Link>
       </div>
     </div>
   </div>
