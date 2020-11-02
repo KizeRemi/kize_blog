@@ -1,0 +1,26 @@
+{
+  "name": "portfolio_v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "express": "^4.17.1",
+    "next": "latest",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "styled-components": "^5.0.0-rc.2",
+    "tailwindcss": "^1.9.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
