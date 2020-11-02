@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default as GlobalStyle } from './GlobalStyle';","map":{"version":3,"sources":["/Users/Remi/Desktop/blog-mavillaz/components/Global/index.js"],"names":["default","GlobalStyle"],"mappings":"AAAA,SAASA,OAAO,IAAIC,WAApB,QAAuC,eAAvC","sourcesContent":["export { default as GlobalStyle } from './GlobalStyle';\n"]},"metadata":{},"sourceType":"module"}

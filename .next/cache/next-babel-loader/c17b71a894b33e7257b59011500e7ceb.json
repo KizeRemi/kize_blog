@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default as StackCard } from './StackCard';","map":{"version":3,"sources":["/Users/Remi/Desktop/blog-mavillaz/components/Stack/index.js"],"names":["default","StackCard"],"mappings":"AAAA,SAASA,OAAO,IAAIC,SAApB,QAAqC,aAArC","sourcesContent":["export { default as StackCard } from './StackCard';\n"]},"metadata":{},"sourceType":"module"}
