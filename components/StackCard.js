@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageLayout } from './Layout';
 
 const StackCard = ({ logo, name, description }) => (
-  <div class="bg-white max-w-sm rounded overflow-hidden shadow">
+  <div class="bg-white max-w-sm m-auto sm:m-0 rounded overflow-hidden shadow">
     <div class="p-4 text-center">
       <div className="flex justify-center">
         <ImageLayout colored>

@@ -78,11 +78,11 @@ const Contact= () => (
     </div>
     <div class="container mx-auto py-12">
       <h2 class="text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Technos préférés</h2>
-      <div class="grid grid-cols-5 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
         {STACKS_LIST.map(stack => <StackCard {...stack} />)}
       </div>
       <h2 class="text-base text-center my-12 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Expériences</h2>
-      <div class="grid grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         {MISSIONS_LIST.map(({ description1, description2, ...mission })=> (
           <MissionCard {...mission}>
             {description1}
@@ -92,7 +92,7 @@ const Contact= () => (
         ))}
       </div>
       <h2 class="text-base text-center my-12 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Hauts faits</h2>
-      <div class="flex justify-around">
+      <div class="flex flex-row flex-wrap md:flexnowrap md:flex-row justify-around">
         {ACHIEVEMENTS.map((achievement, index) => <Achievement start={index % 2} {...achievement} />)}
       </div>
     </div>

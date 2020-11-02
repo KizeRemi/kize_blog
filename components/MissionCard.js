@@ -10,7 +10,7 @@ const GradientLayout = styled.div`
 `;
 
 const MissionCard = ({ company, duration, occupation, children, companyLogo }) => (
-  <div className="max-w-sm w-full lg:max-w-full lg:flex border-2 border-gray-200 rounded leading-normal">
+  <div className="w-full lg:flex border-2 border-gray-200 rounded leading-normal">
     <GradientLayout>
       <h3 className="font-bold text-xl mb-0">{company}</h3>
       <div className="font-bold text-2xl mb-0">{occupation}</div>
