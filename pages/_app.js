@@ -2,9 +2,10 @@ import App from 'next/app'
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
 import Menu from '../components/Menu';
+
+import '../assets/fonts.css';
 import '../assets/index.css';
 
-import { GlobalStyle } from '../components/Global';
 import Footer from '../components/Footer';
 
 const theme = {
@@ -37,7 +38,6 @@ export class PortFolioApp extends App {
         <div className="container mx-auto">
           <Menu items={menuConfig} />
         </div>
-        <GlobalStyle />
         <Component {...pageProps} />
         <iframe src="https://snapwidget.com/embed/884278" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style={{ border: 'none', width: '100%', height: '180px'}} />
         <Footer />

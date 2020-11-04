@@ -60,8 +60,8 @@ const Home = () => (
       </div>
     </div>
     <Resume title="Biographie" imageUrl="/images/avatar.jpg">
-      Je m’appelle Rémi, j’ai 29 ans et je vis à Rueil-Malmaison dans les Hauts-de-Seine avec mon Shiba inu. <br />
-      Passioné de jeux vidéos mais aussi par le code, je créé des applications web depuis quelques années.
+      Je m’appelle Rémi, j’ai 29 ans et je vis à Rueil-Malmaison dans les Hauts-de-Seine avec mon Shiba inu. <br /><br />
+      Passioné de jeux vidéos mais aussi par le code, je créé des applications web depuis quelques années.<br />
 
       J’aime partager mes connaissances, et m’investir à fond dans les produits que je développe !
     </Resume>

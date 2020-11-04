@@ -5,7 +5,7 @@ const Menu = ({ items }) => {
   const [isOpen, toggleMenu] = useState(false);
 
   return (
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-14 xl:pb-8">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-14 xl:pb-8 tracking-wide">
       <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon points="50,0 100,0 50,100 0,100" />
       </svg>
@@ -37,7 +37,6 @@ const Menu = ({ items }) => {
             <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
               <div class="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="" />
                 </div>
                 <div class="-mr-2">
                   <button onClick={() => toggleMenu(false)} type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
@@ -49,9 +48,11 @@ const Menu = ({ items }) => {
               </div>
               <div class="px-2 pt-2 pb-3">
                 {items.map(item => (
-                <Link href={item.href}>
-                  <a className={`${item.important && 'border border-gray-300 rounded'} my-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out`} role="menuitem">{item.label}</a>
-                </Link>
+                  <div className="flex">
+                    <Link href={item.href}>
+                      <a className={`${item.important && 'border-2 border-gray-600 rounded'} my-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out`} role="menuitem">{item.label}</a>
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>

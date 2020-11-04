@@ -76,7 +76,7 @@ const Contact= () => (
         </dl>
       </div>
     </div>
-    <div class="container mx-auto py-12">
+    <div class="container px-2 md:px-0 mx-auto py-12">
       <h2 class="text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Technos préférés</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
         {STACKS_LIST.map(stack => <StackCard {...stack} />)}
