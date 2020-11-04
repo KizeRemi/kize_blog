@@ -5,9 +5,9 @@ const Header = () => (
   <div class="relative bg-white overflow-hidden container mx-auto mt-6 lg:mt-16">
     <div class="max-w-screen-xl mx-auto">
       <div class="z-10 bg-white w-full lg:max-w-xl lg:w-full xl:max-w-2xl">
-        <main class="mx-auto max-w-screen-xl px-4 sm:mt-6 sm:px-6 lg:px-8">
+        <main class="mx-auto max-w-screen-xl px-4 md:mt-6 sm:px-6 lg:px-8">
           <div class="sm:text-center lg:text-left leading-none sm:leading-tight">
-            <h2 className="text-4xl font-medium font-semibold text-gray-900">
+            <h2 className="text-4xl font-bold text-gray-900">
               Je suis Rémi.
               <br />
               <span class="text-gray-600">un développeur web, mais pas que !</span>

@@ -34,7 +34,7 @@ const Articles = () => (
         </Select>
       </div>
     </div> 
-    <div className="grid grid-cols-12 gap-8 my-24">
+    <div className="grid grid-cols-12 md:gap-8 my-24">
       <div className="col-span-12 md:col-span-6 divide-y divide-gray-400">
         <ArticleCard
           link="/articles/changer-entreprise-durant-alternance"
