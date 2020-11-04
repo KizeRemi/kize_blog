@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 const ArticleCard = ({ imageUrl, date, title, description, category, link }) => (
   <div class="w-full lg:max-w-full lg:flex py-6 sm:py-8">
-
+    <div class="h-48 lg:w-2/5 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center" style={{ backgroundImage: `url(${imageUrl})`}} title="Woman holding a mug">
+    </div>
     <div class="bg-white mt-2 lg:mt-0 rounded-b lg:rounded-b-none lg:rounded-r px-2 lg:px-4 flex flex-col justify-between leading-normal font-light">
       <div class="mb-8">
         <div class="flex-1 mb-4 min-w-0">
