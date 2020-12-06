@@ -8,7 +8,7 @@ import Introduction from '../components/Introduction';
 const Articles = () => (
   <div class="bg-white container mx-auto">
     <Head>
-      <title>Articles</title>
+      <title>Mavillaz Rémi - Liste d'articles - Code Jeux vidéos Mode</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <Title centered as="h2" weight="thin" uppercase>Articles</Title>

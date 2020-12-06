@@ -24,7 +24,7 @@ const ACHIEVEMENTS = [
 const Contact= () => (
   <div>
     <Head>
-      <title>Home</title>
+      <title>Mavillaz Rémi - Informations professionnelle - CV - Projets</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <h2 class="container mx-auto text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Page professionnelle</h2>

@@ -13,14 +13,14 @@ import CallToAction from '../components/CallToAction';
 const Home = () => (
   <div>
     <Head>
-      <title>Accueil</title>
+      <title>Rémi Mavillaz - Développeur web chez Eleven Labs</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <Header />
     <div className="my-20 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
       <div className="flex flex-col lg:flex-row">
-        <div className="flex-1 divide-y divide-gray-400 lg:pr-8">
+        <div className="flex-1 divide-y divide-gray-400 lg:pr-16">
           <ArticleCard
             link="/articles/technologie-la-solution-a-handicap"
             category="Informatique"
