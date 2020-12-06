@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import Header from '../components/Header';
 import ArticleCard from '../components/ArticleCard';
 import Title from '../components/Title';

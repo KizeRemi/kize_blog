@@ -1,6 +1,5 @@
 import App from 'next/app'
-import React, { useRef } from 'react'
-import { ThemeProvider } from 'styled-components';
+import React from 'react'
 import Menu from '../components/Menu';
 
 import '../assets/fonts.css';
@@ -19,7 +18,6 @@ export class PortFolioApp extends App {
     const { Component, pageProps } = this.props
 
     const onButtonClick = () => {
-
       this.myRef.current.classList.toggle("dark")
     };
 
