@@ -16,7 +16,7 @@ Achievement.defaultProps = {
 
 Achievement.propTypes = {
   value: number.isRequired,
-  label: String.isRequired,
+  label: string.isRequired,
   start: bool,
 }
 export default Achievement;

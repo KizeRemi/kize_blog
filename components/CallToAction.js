@@ -1,30 +1,31 @@
 import React from 'react';
 import Link from 'next/link';
+import { string } from 'prop-types';
 
-const CallToAction = () => (
-  <div class="bg-gray-100 border border-gray-200 rounded mt-8">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-10">
-        Envie de connaitre mon parcours professionnel?
-        <br />
-        <span class="text-2xl text-indigo-600">Ou tout simplement rester en contact?</span>
-      </h2>
-      <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
-        <div class="inline-flex rounded-md shadow">
-          <Link href="/contact">
-            <a class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-              Voir mon parcours
-            </a>
-          </Link>
-        </div>
-        <div class="ml-3 inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-            Réseaux sociaux
+const CallToAction = ({ title, subTitle, links }) => (
+  <div className="container px-5 py-20 mx-auto flex items-center md:flex-row flex-col">
+    <div className="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+      <h4 className="text-sm text-gray-600 tracking-widest font-medium title-font mb-1 uppercase">{subTitle}</h4>
+      <h3 className="md:text-3xl text-2xl font-medium title-font text-gray-900">{title}</h3>
+    </div>
+    <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
+      {links.map(link => (
+        <Link href={link.href}>
+          <a className="border-2 inline-flex py-3 px-5 w-44 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+            <span className="flex items-start flex-col leading-none uppercase">
+              <span className="text-xs text-gray-600 mb-1 font-medium">{link.subLabel}</span>
+              <span className="title-font font-bold">{link.label}</span>
+            </span>
           </a>
-        </div>
-      </div>
+        </Link>
+      ))}
     </div>
   </div>
 );
+
+CallToAction.propTypes = {
+  title: string,
+  subTitle: string,
+};
 
 export default CallToAction;

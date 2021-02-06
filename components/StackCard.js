@@ -2,17 +2,13 @@ import React from 'react';
 import { ImageLayout } from './Layout';
 
 const StackCard = ({ logo, name, description }) => (
-  <div class="bg-white max-w-sm m-auto sm:m-0 rounded overflow-hidden shadow">
-    <div class="p-4 text-center">
-      <div className="flex justify-center">
-        <ImageLayout colored>
-          <img src={logo} />
-        </ImageLayout>
-      </div>
-      <div class="font-bold my-2 text-xl">{name}</div>
-      <p class="text-gray-700 text-sm">
-        {description}
-      </p>
+  <div class="xl:w-1/3 md:w-1/2 p-4">
+    <div class="border border-gray-200 p-6 rounded-lg h-56">
+      <ImageLayout colored>
+        <img className="w-10" src={logo} />
+      </ImageLayout>
+      <h2 class="text-xl text-gray-900 font-bold title-font my-2">{name}</h2>
+      <p class="leading-relaxed text-base">{description}</p>
     </div>
   </div>
 );

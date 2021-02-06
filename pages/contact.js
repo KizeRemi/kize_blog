@@ -22,7 +22,7 @@ const ACHIEVEMENTS = [
 ]
 
 const Contact= () => (
-  <div>
+  <div className="my-20 px-2 md:px-0 bg-white container mx-auto">
     <Head>
       <title>Mavillaz Rémi - Informations professionnelle - CV - Projets</title>
       <link rel='icon' href='/favicon.ico' />
@@ -76,11 +76,13 @@ const Contact= () => (
         </dl>
       </div>
     </div>
-    <div class="container px-2 md:px-0 mx-auto py-12">
-      <h2 class="text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Technos préférés</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+    <section className="text-gray-600 py-8">
+      <h2 className="text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Technos préférés</h2>
+      <div className="flex flex-wrap">
         {STACKS_LIST.map(stack => <StackCard {...stack} />)}
       </div>
+    </section>
+    <div class="containermx-auto py-8">
       <h2 class="text-base text-center my-12 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Expériences</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         {MISSIONS_LIST.map(({ description1, description2, ...mission })=> (

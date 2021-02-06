@@ -5,6 +5,7 @@ import ArticleCard from '../components/ArticleCard';
 import Title from '../components/Title';
 import CategoryButton from '../components/CategoryButton';
 import Resume from '../components/Resume';
+import Paragraph from '../components/Paragraph';
 
 import { CATEGORIES } from '../constants/categories';
 import CallToAction from '../components/CallToAction';
@@ -15,7 +16,9 @@ const Home = () => (
       <title>Rémi Mavillaz - Développeur web chez Eleven Labs</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
-    <Header />
+    <section class="text-gray-600 my-8">
+      <Header />
+    </section>
     <div className="my-20 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
       <div className="flex flex-col lg:flex-row">
@@ -58,13 +61,32 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <Resume title="Biographie" imageUrl="/images/avatar.jpg">
-      Je m’appelle Rémi, j’ai 29 ans et je vis à Rueil-Malmaison dans les Hauts-de-Seine avec mon Shiba inu. <br /><br />
-      Passioné de jeux vidéos mais aussi par le code, je créé des applications web depuis quelques années.<br />
-
-      J’aime partager mes connaissances, et m’investir à fond dans les produits que je développe !
-    </Resume>
-    <CallToAction />
+    <section class="flex flex-col items-center md:text-center my-8 bg-white container mx-auto">
+      <Title centered as="h2" weight="thin" uppercase>Biographie</Title>
+      <Resume title="Biographie" name="Mavillaz Rémi" job="Développeur web React - Node.js - GraphQL" imageUrl="/images/avatar.jpg">
+        <Paragraph>Je m’appelle Rémi, j’ai 29 ans et je vis à Rueil-Malmaison dans les Hauts-de-Seine avec mon Shiba inu.</Paragraph>
+        <p>Passioné de jeux vidéos mais aussi par le code, je créé des applications web depuis quelques années.</p>
+        <p>J’aime partager mes connaissances, et m’investir à fond dans les produits que je développe !</p>
+      </Resume>
+    </section>
+    <section class="bg-gray-100 border border-gray-200 rounded mt-8">
+      <CallToAction
+        subTitle="Envie de connaitre mon parcours professionnel?"
+        title="Ou tout simplement rester en contact?"
+        links={[
+          {
+            href: '/contact',
+            label: 'Contact',
+            subLabel: 'Je souhaite prendre'
+          },
+          {
+            href: '/contact',
+            label: 'Parcours',
+            subLabel: 'Je regarde ton'
+          }
+        ]}
+      />
+    </section>
   </div>
 )
 
