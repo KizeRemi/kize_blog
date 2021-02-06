@@ -7,9 +7,10 @@ import Title from '../../components/Title';
 import ArticleHeader from '../../components/ArticleHeader';
 import ArticleBody from '../../components/ArticleBody';
 import ArticleFooter from '../../components/ArticleFooter';
+import ArticleLayout from '../../components/ArticleLayout';
 
 const InternetANewWayToLearn = () => (
-  <div className="my-10 container mx-auto px-32 text-xl">
+  <ArticleLayout>
     <Head>
       <title>Internet, une nouvelle forme d'apprentissage?</title>
       <link rel='icon' href='/favicon.ico' />
@@ -61,7 +62,7 @@ const InternetANewWayToLearn = () => (
         <div>écrit par Mavillaz Rémi</div>
       </div>
     </ArticleFooter>
-  </div>
+  </ArticleLayout>
 )
 
 export default InternetANewWayToLearn;

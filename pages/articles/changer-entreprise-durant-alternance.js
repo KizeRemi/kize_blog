@@ -10,7 +10,7 @@ import ArticleFooter from '../../components/ArticleFooter';
 import ArticleLayout from '../../components/ArticleLayout';
 
 const ChangeCompanyDuringWorkStudy = () => (
-<ArticleLayout>
+  <ArticleLayout>
     <Head>
       <title>Retour d'experience: Changer d'entreprise durant l'alternance</title>
       <link rel='icon' href='/favicon.ico' />

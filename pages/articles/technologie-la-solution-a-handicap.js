@@ -7,9 +7,10 @@ import Title from '../../components/Title';
 import ArticleHeader from '../../components/ArticleHeader';
 import ArticleBody from '../../components/ArticleBody';
 import ArticleFooter from '../../components/ArticleFooter';
+import ArticleLayout from '../../components/ArticleLayout';
 
 const TechnologySolutionToHandicap = () => (
-  <div className="my-10 container mx-auto px-32 text-xl">
+  <ArticleLayout>
     <Head>
       <title>La technologie, la solution à l’handicap?</title>
       <link rel='icon' href='/favicon.ico' />
@@ -60,7 +61,7 @@ const TechnologySolutionToHandicap = () => (
         <div>écrit par Mavillaz Rémi</div>
       </div>
     </ArticleFooter>
-  </div>
+  </ArticleLayout>
 )
 
 export default TechnologySolutionToHandicap;

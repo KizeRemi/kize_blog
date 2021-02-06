@@ -7,9 +7,10 @@ import Title from '../../components/Title';
 import ArticleHeader from '../../components/ArticleHeader';
 import ArticleBody from '../../components/ArticleBody';
 import ArticleFooter from '../../components/ArticleFooter';
+import ArticleLayout from '../../components/ArticleLayout';
 
 const ImportanceOfTypography = () => (
-  <div className="my-10 container mx-auto px-32 text-xl">
+  <ArticleLayout>
     <Head>
       <title>L’importance de la typographie </title>
       <link rel='icon' href='/favicon.ico' />
@@ -62,7 +63,7 @@ const ImportanceOfTypography = () => (
         <div>écrit par Mavillaz Rémi</div>
       </div>
     </ArticleFooter>
-  </div>
+  </ArticleLayout>
 )
 
 export default ImportanceOfTypography;

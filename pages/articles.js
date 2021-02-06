@@ -15,6 +15,9 @@ const Articles = () => (
     <Introduction>
       Vous retrouverez ici tous mes articles. Code, jeux videos, mode, je parle de plein de sujets, expériences, tests de marques et éventuellement de tutos.
     </Introduction>
+    <div class="flex my-6 justify-center">
+      <div class="w-16 h-1 rounded-full bg-gray-500 inline-flex"></div>
+    </div>
     <div className="flex px-2 lg:px-0 flex-col sm:flex-row items-center justify-end mt-2 lg:mt-4 mb-8">
       <div className="mx-4 w-full lg:w-64">
         <Select
