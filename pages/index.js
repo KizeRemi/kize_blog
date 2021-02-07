@@ -6,9 +6,10 @@ import Title from '../components/Title';
 import CategoryButton from '../components/CategoryButton';
 import Resume from '../components/Resume';
 import Paragraph from '../components/Paragraph';
+import CallToAction from '../components/CallToAction';
 
 import { CATEGORIES } from '../constants/categories';
-import CallToAction from '../components/CallToAction';
+import { CTA_LINKS } from '../constants/menu';
 
 const Home = () => (
   <div>
@@ -73,18 +74,7 @@ const Home = () => (
       <CallToAction
         subTitle="Envie de connaitre mon parcours professionnel?"
         title="Ou tout simplement rester en contact?"
-        links={[
-          {
-            href: '/contact',
-            label: 'Contact',
-            subLabel: 'Je souhaite prendre'
-          },
-          {
-            href: '/contact',
-            label: 'Parcours',
-            subLabel: 'Je regarde ton'
-          }
-        ]}
+        links={CTA_LINKS}
       />
     </section>
   </div>

@@ -14,3 +14,16 @@ export const MENUS_LIST = [
   },
 ];
   
+export const CTA_LINKS = [
+  {
+    href: '/contact',
+    label: 'Contact',
+    subLabel: 'Je souhaite prendre'
+  },
+  {
+    href: '/contact',
+    label: 'Parcours',
+    subLabel: 'Je regarde ton'
+  }
+];
+  
