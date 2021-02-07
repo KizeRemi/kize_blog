@@ -23,7 +23,7 @@ const Home = () => (
     <section className="my-20 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
       <div className="flex flex-col lg:flex-row">
-        <div className="flex-1 divide-y divide-gray-400 lg:pr-16">
+        <div className="flex-1 divide-y divide-gray-400">
           <ArticleCard
             link="/articles/technologie-la-solution-a-handicap"
             category="Informatique"
@@ -61,7 +61,7 @@ const Home = () => (
     </section>
     <section className="my-20 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Meilleurs catégories</Title>
-      <div className="flex flex-row flex-wrap text-white justify-center lg:my-8">
+      <div className="flex flex-row flex-wrap text-white justify-center">
         {CATEGORIES.map((category) => <CategoryLink {...category}>Découvrir</CategoryLink>)}
       </div>
     </section>

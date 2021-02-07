@@ -6,20 +6,7 @@ import MISSIONS_LIST from '../constants/missions';
 import MissionCard from '../components/MissionCard';
 import Achievement from '../components/Achievement';
 
-const PRO_INFORMATIONS = [
-  { title: 'Nom complet', value: 'Mavillaz Rémi' },
-  { title: 'Métier', value: 'Développeur web' },
-  { title: 'Société', value: 'Eleven Labs' },
-  { title: 'Adresse email', value: 'remi.mavillaz@live.fr' },
-  { title: 'A propos', value: "Développeur web a forte appétence et très orienté produit. J'aime les codes simples" },
-]
-
-const ACHIEVEMENTS = [
-  { value: 7, label: 'Articles publiés' },
-  { value: 8, label: 'Missions réussies' },
-  { value: 2, label: 'certifications' },
-  { value: 5, label: <>Années<br />d'experiences</> },
-]
+import { PRO_INFORMATIONS, ACHIEVEMENTS } from '../constants/professional';
 
 const Contact= () => (
   <div className="my-20 px-2 md:px-0 bg-white container mx-auto">
@@ -82,7 +69,7 @@ const Contact= () => (
         {STACKS_LIST.map(stack => <StackCard {...stack} />)}
       </div>
     </section>
-    <div class="containermx-auto py-8">
+    <section class="containermx-auto py-8">
       <h2 class="text-base text-center my-12 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Expériences</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         {MISSIONS_LIST.map(({ description1, description2, ...mission })=> (
@@ -97,7 +84,7 @@ const Contact= () => (
       <div class="flex flex-row flex-wrap md:flexnowrap md:flex-row justify-around">
         {ACHIEVEMENTS.map((achievement, index) => <Achievement start={index % 2} {...achievement} />)}
       </div>
-    </div>
+    </section>
   </div>
 )
 

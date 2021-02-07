@@ -23,7 +23,7 @@ export const CTA_LINKS = [
   {
     href: '/contact',
     label: 'Parcours',
-    subLabel: 'Je regarde ton'
+    subLabel: 'Je m\'informe sur'
   }
 ];
   

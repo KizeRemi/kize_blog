@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Select from '../components/forms/Select';
 import Title from '../components/Title';
 import VerticalArticleCard from '../components/VerticalArticleCard';
-import Introduction from '../components/Introduction';
+import Introduction from '../components/articles/Introduction';
 
 import { ARTICLES_LIST } from '../constants/articles';
 
