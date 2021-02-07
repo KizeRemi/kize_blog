@@ -3,10 +3,10 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import ArticleCard from '../components/ArticleCard';
 import Title from '../components/Title';
-import CategoryButton from '../components/CategoryButton';
 import Resume from '../components/Resume';
 import Paragraph from '../components/Paragraph';
 import CallToAction from '../components/CallToAction';
+import { CategoryLink } from '../components/links';
 
 import { CATEGORIES } from '../constants/categories';
 import { CTA_LINKS } from '../constants/menu';
@@ -20,7 +20,7 @@ const Home = () => (
     <section class="text-gray-600 my-8">
       <Header />
     </section>
-    <div className="my-20 bg-white container mx-auto">
+    <section className="my-20 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1 divide-y divide-gray-400 lg:pr-16">
@@ -57,11 +57,14 @@ const Home = () => (
             description="Cela fait maintenant 2 ans et demi que j'ai repris les études en alternance. Je me suis inscrit à l'université de Cergy Pontoise, filière développement web et mobile. Après avoir été accepté, j'ai dû faire face à cette fameuse période où il faut absolument trouver une entreprise avant la rentrée..."
           />
         </div>
-        <div className="flex flex-row flex-wrap lg:flex-col text-white justify-center lg:my-8">
-          {CATEGORIES.map((category) => <CategoryButton {...category} />)}
-        </div>
       </div>
-    </div>
+    </section>
+    <section className="my-20 bg-white container mx-auto">
+      <Title centered as="h2" weight="thin" uppercase>Meilleurs catégories</Title>
+      <div className="flex flex-row flex-wrap text-white justify-center lg:my-8">
+        {CATEGORIES.map((category) => <CategoryLink {...category}>Découvrir</CategoryLink>)}
+      </div>
+    </section>
     <section class="flex flex-col items-center md:text-center my-8 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Biographie</Title>
       <Resume title="Biographie" name="Mavillaz Rémi" job="Développeur web React - Node.js - GraphQL" imageUrl="/images/avatar.jpg">
