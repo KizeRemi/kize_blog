@@ -17,10 +17,10 @@ const Home = () => (
       <title>Rémi Mavillaz - Développeur web chez Eleven Labs</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
-    <section class="text-gray-600 my-8">
+    <section class="container px-5 lg:px-14 container mx-auto text-gray-600 my-8">
       <Header />
     </section>
-    <section className="my-20 bg-white container mx-auto">
+    <section className="my-20 px-5 lg:px-14 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
       <div className="flex flex-col lg:flex-row">
         <div className="flex-1 divide-y divide-gray-400">
@@ -59,7 +59,7 @@ const Home = () => (
         </div>
       </div>
     </section>
-    <section className="my-20 bg-white container mx-auto">
+    <section className="my-20 px-5 lg:px-14 bg-white container mx-auto">
       <Title centered as="h2" weight="thin" uppercase>Meilleurs catégories</Title>
       <div className="flex flex-row flex-wrap text-white justify-center">
         {CATEGORIES.map((category) => <CategoryLink {...category}>Découvrir</CategoryLink>)}

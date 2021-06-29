@@ -27,7 +27,7 @@ export class PortFolioApp extends App {
           <Menu items={MENUS_LIST} />
         </div>
         <Component {...pageProps} />
-        <iframe src="https://snapwidget.com/embed/884278" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style={{ border: 'none', width: '100%', height: '180px'}} />
+        <iframe src="https://snapwidget.com/embed/946502" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style={{ border: 'none', width: '100%', height: '180px'}} />
         <Footer />
         <div className="text-center text-xs uppercase my-4">Blog développé en 2020 par Mavillaz `Kize` Rémi</div>
       </div>

@@ -17,7 +17,7 @@ const Articles = () => {
   };
 
   return (
-    <div class="bg-white container mx-auto">
+    <div class="bg-white px-5 lg:px-14 container mx-auto">
       <Head>
         <title>Mavillaz Rémi - Liste d'articles - Code Jeux vidéos Mode</title>
         <link rel='icon' href='/favicon.ico' />
