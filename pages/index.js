@@ -13,6 +13,7 @@ import { CTA_LINKS } from '../constants/menu';
 import CXImage from '../public/images/articles/cx.jpg';
 import DatalegreyaImage from '../public/images/articles/datalegreya.png';
 import VisioImage from '../public/images/articles/visiohandicap.png';
+import AlternanceImage from '../public/images/articles/alternance.jpg';
 
 const Home = () => (
   <div>
@@ -26,6 +27,14 @@ const Home = () => (
     <section class="bg-white">
       <div class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
         <div class="flex grid grid-cols-12 pb-10 sm:px-5 gap-x-8 gap-y-16">
+          <ArticleCard
+            link="/articles/changer-entreprise-durant-alternance"
+            category="Experiences"
+            imageUrl={AlternanceImage}
+            title="Retour d'experience: Changer d'entreprise durant l'alternance"
+            date="Novembre 2017"
+            description="Cela fait maintenant 2 ans et demi que j'ai repris les études en alternance. Je me suis inscrit à l'université de Cergy Pontoise, filière développement web et mobile. Après avoir été accepté, j'ai dû faire face à cette fameuse période où il faut absolument trouver une entreprise avant la rentrée..."
+          />
           <ArticleCard
             link="/articles/customer-experience-cle-de-la-reussite"
             category="Informatique"
