@@ -10,6 +10,9 @@ import { CategoryLink } from '../components/links';
 
 import { CATEGORIES } from '../constants/categories';
 import { CTA_LINKS } from '../constants/menu';
+import CXImage from '../public/images/articles/cx.jpg';
+import DatalegreyaImage from '../public/images/articles/datalegreya.png';
+import VisioImage from '../public/images/articles/visiohandicap.png';
 
 const Home = () => (
   <div>
@@ -20,41 +23,32 @@ const Home = () => (
     <section class="container px-5 lg:px-14 container mx-auto text-gray-600 my-8">
       <Header />
     </section>
-    <section className="my-20 px-5 lg:px-14 bg-white container mx-auto">
-      <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex-1 divide-y divide-gray-400">
-          <ArticleCard
-            link="/articles/technologie-la-solution-a-handicap"
-            category="Informatique"
-            imageUrl="/images/articles/visiohandicap.png"
-            title="La technologie, la solution à l’handicap?"
-            date="Décembre 2016"
-            description="Depuis quelques années, de nombres scientifiques mettent en place des prototypes destinés aux handicapés afin d’améliorer leurs quotidiens. Les progrès sont nombreux mais ces solutions sont-elles complètement viables aujourd’hui ? Pas si sûr."
-          />
-          <ArticleCard
-            link="/articles/importance-de-la-typographie"
-            category="Informatique"
-            imageUrl="/images/articles/datalegreya.png"
-            title="L’importance de la typographie"
-            date="Février 2017"
-            description="Avec le web, les marques font désormais très attention à leur typographie, pourquoi cet intérêt si soudain? Les écrans ont-ils influé sur la typographie? Quel sont les enjeux en terme de marketing?"
-          />
+    <section class="bg-white">
+      <div class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
+        <div class="flex grid grid-cols-12 pb-10 sm:px-5 gap-x-8 gap-y-16">
           <ArticleCard
             link="/articles/customer-experience-cle-de-la-reussite"
             category="Informatique"
-            imageUrl="/images/articles/cx.jpg"
+            imageUrl={CXImage}
             title="Le Customer Experience, la clé de la réussite?"
             date="Mai 2017"
             description="Amazon est devenu leader du commerce électronique grâce à ce que l’on appelle “L'expérience utilisateur”. Mais qu’est-ce que réellement l'expérience utilisateur (ou CX en anglais) et comment une jeune entreprise peut adopter cette pratique?"
           />
           <ArticleCard
-            link="/articles/changer-entreprise-durant-alternance"
-            category="Experiences"
-            imageUrl="/images/articles/alternance.jpg"
-            title="Retour d'experience: Changer d'entreprise durant l'alternance"
-            date="Novembre 2017"
-            description="Cela fait maintenant 2 ans et demi que j'ai repris les études en alternance. Je me suis inscrit à l'université de Cergy Pontoise, filière développement web et mobile. Après avoir été accepté, j'ai dû faire face à cette fameuse période où il faut absolument trouver une entreprise avant la rentrée..."
+            link="/articles/importance-de-la-typographie"
+            category="Informatique"
+            imageUrl={DatalegreyaImage}
+            title="L’importance de la typographie dans le web"
+            date="Février 2017"
+            description="Avec le web, les marques font désormais très attention à leur typographie, pourquoi cet intérêt si soudain? Les écrans ont-ils influé sur la typographie? Quel sont les enjeux en terme de marketing? Le web design se voit souvent heurté par plusieurs problématiques..."
+          />
+          <ArticleCard
+            link="/articles/technologie-la-solution-a-handicap"
+            category="Informatique"
+            imageUrl={VisioImage}
+            title="La technologie, la solution à l’handicap?"
+            date="Décembre 2016"
+            description="Depuis quelques années, de nombres scientifiques mettent en place des prototypes destinés aux handicapés afin d’améliorer leurs quotidiens. Les progrès sont nombreux mais ces solutions sont-elles complètement viables aujourd’hui ? Pas si sûr."
           />
         </div>
       </div>
