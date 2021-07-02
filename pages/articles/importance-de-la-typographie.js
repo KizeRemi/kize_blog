@@ -1,13 +1,14 @@
-import React from 'react'
-import Head from 'next/head'
-import Paragraph from '../../components/Paragraph';
+import React from 'react';
+import Head from 'next/head';
+
+import Paragraph from '../../components/articles/Paragraph';
 import Introduction from '../../components/articles/Introduction';
-import Conclusion from '../../components/Conclusion';
+import Conclusion from '../../components/articles/Conclusion';
 import Title from '../../components/Title';
-import ArticleHeader from '../../components/ArticleHeader';
-import ArticleBody from '../../components/ArticleBody';
-import ArticleFooter from '../../components/ArticleFooter';
-import ArticleLayout from '../../components/ArticleLayout';
+import ArticleHeader from '../../components/articles/ArticleHeader';
+import ArticleBody from '../../components/articles/ArticleBody';
+import ArticleFooter from '../../components/articles/ArticleFooter';
+import ArticleLayout from '../../components/articles/ArticleLayout';
 
 const ImportanceOfTypography = () => (
   <ArticleLayout>

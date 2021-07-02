@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from '../components/articles/ArticleCard';
 import Title from '../components/Title';
 import Resume from '../components/Resume';
-import Paragraph from '../components/Paragraph';
+import Paragraph from '../components/articles/Paragraph';
 import CallToAction from '../components/CallToAction';
 import { CategoryLink } from '../components/links';
 
@@ -66,9 +66,9 @@ const Home = () => (
         />
       </div>
     </section>
-    <section className="bg-white w-full px-5 py-6 mx-auto max-w-7xl">
+    <section className="bg-white w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
       <Title centered as="h2" weight="thin" uppercase>Meilleurs catégories</Title>
-      <div className="flex flex-row flex-wrap text-white justify-center">
+      <div className="flex text-white grid grid-cols-12 pb-10 gap-8">
         {CATEGORIES.map((category) => <CategoryLink {...category}>Découvrir</CategoryLink>)}
       </div>
     </section>

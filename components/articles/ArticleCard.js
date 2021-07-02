@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Tag from './Tag';
+import Tag from '../Tag';
 
 const ArticleCard = ({ imageUrl, date, title, description, category, link, className }) => (
   <div className={`flex flex-col items-start space-y-3 ${className}`}>

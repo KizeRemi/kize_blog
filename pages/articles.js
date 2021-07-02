@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Select from '../components/forms/Select';
 import Title from '../components/Title';
-import VerticalArticleCard from '../components/VerticalArticleCard';
 import Introduction from '../components/articles/Introduction';
 
 import { ARTICLES_LIST } from '../constants/articles';
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard from '../components/articles/ArticleCard';
+import Divider from '../components/Divider';
 
 const Articles = () => {
   const [articles, setDisplayedArticles] = useState(ARTICLES_LIST);
@@ -26,9 +26,6 @@ const Articles = () => {
       <Introduction>
         Vous retrouverez ici tous mes articles. Code, jeux videos, mode, je parle de plein de sujets, expériences, tests de marques et éventuellement de tutos.
       </Introduction>
-      <div class="flex my-6 justify-center">
-        <div class="w-16 h-0.5 bg-gray-500 inline-flex"></div>
-      </div>
       <div className="flex px-2 lg:px-0 flex-col sm:flex-row items-center justify-end mt-2 lg:mt-4 mb-8">
         <div className="mx-4 w-full lg:w-64">
           <Select
@@ -50,6 +47,7 @@ const Articles = () => {
           </Select>
         </div>
       </div>
+      <Divider />
       <div className="flex grid grid-cols-12 pb-10 gap-x-8 gap-y-16">
         {articles.map(article => (
           <ArticleCard className="col-span-12 sm:col-span-6" {...article}/>
