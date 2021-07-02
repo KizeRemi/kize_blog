@@ -6,12 +6,12 @@ import VerticalArticleCard from '../components/VerticalArticleCard';
 import Introduction from '../components/articles/Introduction';
 
 import { ARTICLES_LIST } from '../constants/articles';
+import ArticleCard from '../components/ArticleCard';
 
 const Articles = () => {
   const [articles, setDisplayedArticles] = useState(ARTICLES_LIST);
-
   const switchCategory = (e) => {
-    const { value: selectedCategory} = e.target;
+    const { value: selectedCategory } = e.target;
     const articlesByCategories = selectedCategory && ARTICLES_LIST.filter(article => article.category === selectedCategory);
     setDisplayedArticles(articlesByCategories || ARTICLES_LIST);
   };
@@ -50,11 +50,9 @@ const Articles = () => {
           </Select>
         </div>
       </div>
-      <div className="grid grid-cols-12 md:gap-8 my-16">
+      <div className="flex grid grid-cols-12 pb-10 gap-x-8 gap-y-16">
         {articles.map(article => (
-          <div key={article.link} className="col-span-12 md:col-span-6 divide-y divide-gray-400 px-2 md:px-0 my-6">
-            <VerticalArticleCard {...article}/>
-          </div>
+          <ArticleCard className="col-span-12 sm:col-span-6" {...article}/>
         ))}
       </div>
     </div>
