@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+
 import Header from '../components/Header';
 import ArticleCard from '../components/articles/ArticleCard';
 import Title from '../components/Title';
@@ -27,7 +28,7 @@ const Home = () => (
     </section>
     <section className="bg-white w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
       <Title centered as="h2" weight="thin" uppercase>Derniers articles</Title>
-      <div className="flex grid grid-cols-12 pb-10 gap-x-8 gap-y-16">
+      <div className="grid grid-cols-12 pb-10 gap-x-8 gap-y-16">
         <ArticleCard
           className="col-span-12 sm:col-span-6 xl:col-span-4"
           link="/articles/changer-entreprise-durant-alternance"
