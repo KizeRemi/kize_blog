@@ -5,7 +5,7 @@ import { Disclosure } from '@headlessui/react';
 import Emoji from "../Emoji";
 
 const Answer = ({ children }) => (
-  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+  <Disclosure.Panel className="mt-4 sm:px-4 sm:text-lg md:text-normal text-gray-500">
     <Emoji emoji="me" />{children}
   </Disclosure.Panel>
 );

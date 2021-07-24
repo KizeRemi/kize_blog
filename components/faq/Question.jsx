@@ -6,10 +6,10 @@ import Emoji from "../Emoji";
 
 const Question = ({ open, children }) => (
   <Disclosure.Button
-    className="flex justify-between items-center w-full px-4 py-2 text-sm font-bold text-left text-purple-900 bg-purple-100 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
+    className="flex justify-between items-center w-full px-4 py-2 text-lg sm:text-xl md:text-2xl font-bold text-left text-purple-700 bg-purple-100 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
   >
-    <span className="flex items-center"><Emoji emoji="robot" />{children}</span>
-    <ChevronUpIcon className={`${ open ? 'transform rotate-180' : '' } w-5 h-5 text-purple-500`} />
+    <h3 className="flex items-center"><Emoji emoji="robot" />{children}</h3>
+    <ChevronUpIcon className={`${ open ? 'transform rotate-180' : '' } w-8 h-8 text-purple-500`} />
   </Disclosure.Button>
 );
 

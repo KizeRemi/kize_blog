@@ -1,16 +1,15 @@
-import React from 'react'
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
+import { Disclosure } from '@headlessui/react'; 
 
-import STACKS_LIST from '../constants/stacks';
 import StackCard from '../components/StackCard';
-import MISSIONS_LIST from '../constants/missions';
 import MissionCard from '../components/MissionCard';
 import Achievement from '../components/Achievement';
-
-import { PRO_INFORMATIONS, ACHIEVEMENTS } from '../constants/professional';
 import { Answer, Question } from '../components/faq';
-import { Disclosure } from '@headlessui/react';
-import Emoji from '../components/Emoji';
+
+import STACKS_LIST from '../constants/stacks';
+import MISSIONS_LIST from '../constants/missions';
+import { PRO_INFORMATIONS, ACHIEVEMENTS, FAQ } from '../constants/professional';
 
 const Contact= () => (
   <div className="my-20 px-2 md:px-0 bg-white container mx-auto">
@@ -68,68 +67,18 @@ const Contact= () => (
       </div>
     </section>
     <section className="bg-white w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl">
-      <h2 class="text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">F.A.Q.</h2>
+      <h2 class="text-base text-center my-6 leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Frequently asked questions</h2>
       <div className="w-full mx-auto rounded-2xl">
-        <Disclosure defaultOpen>
-          {({ open }) => (
-            <>
-              <Question open={open}> Peux-tu te présenter rapidement?</Question>
-              <Answer>
-                Je m’appelle Rémi, j’ai 31 ans et je vis à Rueil-Malmaison dans les Hauts-de-Seine avec ma Shiba inu qui me suit partout.
-                J'aime les randonnées en forêt, montagne et faire la fête, toujours partant pour aller boire un verre !<br /><br />
-
-                Passioné de jeux vidéos depuis mon enfance mais aussi par le code, je créé des applications web depuis quelques années maintenant.
-              </Answer>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as="div" className="mt-6" defaultOpen>
-          {({ open }) => (
-            <>
-              <Question open={open}>As tu une passion en dehors du développement?</Question>
-              <Answer>
-                Oui, je m'intéresse énormément aux animaux et notamment les chiens que j'adore (mais j'ai un peu peur des chats !).
-                J'aime beaucoup promener jouer avec les chiens, m'occuper d'eux et étudier les différentes races. Mon job idéal à terme est de pouvoir allier développement web et animaux de compagnie.<br /><br />
-
-                Je suis aussi un grand fan de jeux vidéos, ayant baigné dans cet univers depuis mon enfance, grâce à mes grands-parents qui sont des gamers !
-                J'ai néanmoins tronqué pas mal de temps dédié aux jeux vidéos pour mon 1ere passion désormais, mais je continue de regarder de temps en temps l'e-sport.<br />
-              </Answer>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as="div" className="mt-6" defaultOpen>
-          {({ open }) => (
-            <>
-              <Question open={open}>Pour quel entreprise travailles-tu actuellement?</Question>
-              <Answer>
-                Je travaille chez Eleven Labs, à Paris dans le 16ème arrondissement, une ESN (entreprise au service du numérique) spécialisé dans le développement web sur différents langages (principalement Javascript, PHP) mais aussi experte dans le devOps, Product Owner, Architecture.<br />
-                En tant que consultant Javascript, je suis emmené à intervenir directement chez le client ou dans les locaux d'Eleven Labs dans le cadre d'un projet développé sur-mesure pour un client.
-              </Answer>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as="div" className="mt-6" defaultOpen>
-          {({ open }) => (
-            <>
-              <Question open={open}>Es-tu ouvert au recrutement?</Question>
-              <Answer>
-                J'ai tendance à chercher et m'intéresser moi-même aux entreprises donc je ne souhaite pas recevoir d'offres.<Emoji emoji="nop" /><br />
-                Je suis néanmoins à la recherche d'une école où je pourrais intervenir et partager mes connaissances dans le développement web (principalement Javascript et framework qui sont liés).
-              </Answer>
-            </>
-          )}
-        </Disclosure>
-        <Disclosure as="div" className="mt-6" defaultOpen>
-          {({ open }) => (
-            <>
-              <Question open={open}>Comment te contacter rapidement?</Question>
-              <Answer>
-                Soit par mail <a href="mailto:remi.mavillaz@live.fr" className="text-purple-500 underline">remi.mavillaz@live.fr</a>, soit via mon <a href="https://www.linkedin.com/in/remi-mavillaz" className="text-purple-500 underline">Linkedin</a>.<br />
-                Mais comme je le disais, <b>je ne souhaite pas recevoir d'offres</b> donc inutile de perdre du temps et de me spammer pour ça. En revanche, si vous êtes une école et que vous cherchez des intervenants, n'hésites pas à mon contacter pour en discuter.
-              </Answer>
-            </>
-          )}
-        </Disclosure>
+        {FAQ.map(({ question, answer }) => (
+          <Disclosure as="div" className="mt-10" defaultOpen>
+            {({ open }) => (
+              <>
+                <Question open={open}>{question}</Question>
+                <Answer>{answer}</Answer>
+              </>
+            )}
+          </Disclosure>
+        ))}
       </div>
     </section>
     <section className="text-gray-600 py-8">
